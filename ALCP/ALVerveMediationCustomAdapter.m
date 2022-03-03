@@ -297,7 +297,7 @@ static MAAdapterInitializationStatus ALVerveInitializationStatus = NSIntegerMin;
     
     self.adViewAd = [[HyBidAdView alloc] initWithSize: [self sizeFromAdFormat: adFormat]];
     self.adViewAd.isMediation = YES;
-    [self.adViewAd setMediationVendor: MAX_MEDIATION_VENDOR];
+    //[self.adViewAd setMediationVendor: MAX_MEDIATION_VENDOR];
     self.adViewAdapterDelegate = [[ALVerveMediationBannerDelegate alloc] initWithParentAdapter: self andNotify: delegate];
     self.adViewAd.delegate = self.adViewAdapterDelegate;
     
@@ -334,7 +334,7 @@ static MAAdapterInitializationStatus ALVerveInitializationStatus = NSIntegerMin;
     self.interstitialAdapterDelegate = [[ALVerveMediationInterstitialAdDelegate alloc] initWithParentAdapter: self andNotify: delegate];
     self.interstitialAd = [[HyBidInterstitialAd alloc] initWithZoneID:zoneId andWithDelegate:self.interstitialAdapterDelegate];
     self.interstitialAd.isMediation = YES;
-    [self.interstitialAd setMediationVendor: MAX_MEDIATION_VENDOR];
+    //[self.interstitialAd setMediationVendor: MAX_MEDIATION_VENDOR];
 
     [self.interstitialAd load];
 }
@@ -384,7 +384,7 @@ static MAAdapterInitializationStatus ALVerveInitializationStatus = NSIntegerMin;
     self.rewardedAdapterDelegate = [[ALVerveMediationRewardedAdsDelegate alloc] initWithParentAdapter: self andNotify: delegate];
     self.rewardedAd = [[HyBidRewardedAd alloc] initWithZoneID:zoneId andWithDelegate:self.rewardedAdapterDelegate];
     self.rewardedAd.isMediation = YES;
-    [self.rewardedAd setMediationVendor: MAX_MEDIATION_VENDOR];
+    //[self.rewardedAd setMediationVendor: MAX_MEDIATION_VENDOR];
     
     [self.rewardedAd load];
 }
