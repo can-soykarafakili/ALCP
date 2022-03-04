@@ -42,7 +42,6 @@ Pod::Spec.new do |spec|
 
   spec.source_files = 'ALCP/**/*.{swift,h,m}'
   spec.static_framework = true
-  spec.xcconfig = { 'VALID_ARCHS' =>  'arm64 x86_64', }
 
   spec.dependency 'HyBid', '2.11.1'
   spec.dependency 'AppLovinSDK', '~> 11.2.0'
