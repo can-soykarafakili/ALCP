@@ -44,5 +44,5 @@ Pod::Spec.new do |spec|
   spec.static_framework = true
 
   spec.dependency 'HyBid', '2.11.1'
-  spec.dependency 'AppLovinSDK', '~> 11.2.0'
+  spec.dependency 'AppLovinSDK', '>= 11.1.2', '~> 11.3.0'
 end
